@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7a392;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+.bancen {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 100px;
+    /*background-color: red;*/
+}
+
+.logo > img{
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: 26px;
+}
+
+.logo > div {
+    width: 650px;
+    height: 48px;
+    border: 1px solid #f7a392;
+    float: right;
+    margin: 26px 0px;
+}
+
+.logo p {
+    height: 100%;
+    border-left: 1px solid #f7a392;
+    color: #f30d0d;
+    font-size: large;
+    float: left;
+}
+
+.layout {
+    height: 60px;
+    background-color: #fcaa9a;
+}
+
+.nav > li {
+    float: left;
+    line-height: 60px;
+    border-right: 1px solid #fd9a86;
+    color: #f30d0d;
+    padding: 0px 32px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.nav > .last {
+    border-right: 0px;
+}
+
+.banner {
+    width: 720px;
+    height: 384px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+
+.img-list {
+    height: 384px;
+    list-style: none;
+}
+
+.img-list > img{
+    vertical-align: top;
+}
+
+.img-list li{
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+li.current{
+    z-index: 1;
+    opacity: 1;
+}
+/* 设置箭头样式 */
+.prev-next a {
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    height: 60px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    opacity: .5;
+}
+
+.prev-next a:hover{
+    opacity: 1;
+}
+
+#prev{
+    left: 0;
+}
+
+#next{
+    right: 0;
+}
+
+/* 设置导航点的样式 */
+.dot{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+    margin: auto;
+}
+
+.dot a{
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .5;
+}
+
+.dot a:hover,
+.dot .active{
+    opacity: 1;
+}
+
+.content {
+    height: 250px;
+    margin-bottom: 30px;
+    /*background-color: orangered;*/
+}
+
+.content > div{
+    height: 250px;
+    float: left;
+}
+
+.content > .lef {
+    width: 100%;
+    /*background-color: green;*/
+    margin-right: 25px;
+}
+
+.content > .lef >.ptit {
+    font-size: large;
+    padding: 37px 0px 29px;
+    color: rgb(244, 255, 96);
+    text-align: center;
+}
+
+.content > .lef > ul {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgb(244, 255, 96);
+    text-align: center;
+}
+
+.infolayout {
+    height: 288px;
+    overflow: hidden;
+}
+
+.infolayout > .infocen {
+    width: 1054px;
+    height: 196px;
+    background-color: #ffd8d8;
+    margin: 0 auto;
+    margin-top: 47px;
+    opacity: 0.8;
+}
+
+.infolayout > .infocen > img {
+    float: left;
+    margin: 20px;
+    opacity: 1;
+}
+
+.infocen > .info {
+    float: left;
+    width: 693px;
+    height: 160px;
+    /*background-color: yellow;*/
+    margin-top: 20px;
+}
+
+.infocen .ptit1 {
+    font-size: large;
+    letter-spacing: 4px;
+    color: #3f4442;
+    padding-top: 4px;
+}
+
+.infocen .pinfo {
+    font-size: 14px;
+    line-height: 24px;
+    color: #9f9a94;
+}
+
+.final{
+    width: 100%;
+    height: 70px;
+}
+
+.final h1{
+    text-align: center;
+    opacity: 0.9;
+}
+
+.author p{
+    font-size: small;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.wave{
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+::selection {
+    background-color: salmon;
+    color: white;
+}
+  
+.parallax > use {
+    animation: move-forever 12s linear infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -2s;
+    animation-duration: 5s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+}
+
+@keyframes move-forever {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+}
+.editorial {
+    display: block;
+    width: 100%;
+    height: 10em;
+    max-height: 100vh;
+    margin: 0;
+}
+@media (max-width: 50em) {
+    .editorial {
+        height: 17vw;
+    }
+}

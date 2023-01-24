@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>D3ic1de</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!--logo区域-->
+    <div class="logo bancen">
+        <img src="./img/Jay.webp" alt="">
+        <div>
+            <p>Welcome To My World</p>
+        </div>
+    </div>
+    <!--导航区域-->
+    <div class="layout">
+        <ul class="nav bancen">
+            <li>兔年大吉</li>
+            <li>扬眉兔气</li>
+            <li>大展宏兔</li>
+            <li>兔然暴富</li>
+            <li>前兔似锦</li>
+            <li>大有前兔</li>
+            <li>兔步青云</li>
+            <li>兔飞猛进</li>
+        </ul>
+    </div>
+    <!--轮播图-->
+    <div class="banner">
+        <ul class="img-list">
+            <li class="current">
+                <a href="#">
+                    <img src="./img/轮播图1.jpg" height="384px" width="720px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/轮播图2.jpg" height="384px" width="720px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/轮播图3.jpg" height="384px" width="720px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/轮播图4.jpg" height="384px" width="720px">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/轮播图5.jpg" height="384px" width="720px">
+                </a>
+            </li>
+        </ul>
+        <!-- 添加切换按钮 -->
+        <div class="prev-next">
+            <a id="prev" href="javascript:;"><</a>
+            <a id="next" href="javascript:;">></a>
+        </div>
+        <!-- 导航点 -->
+        <div class="dot">
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/slideshow.js"></script>
+    
+    <!--内容区域1-->
+    <div class="content bancen">
+        <div class="lef">
+            <p class="ptit">
+                新的一年
+            </p>
+            <ul>
+                <li>
+                    冯·诺依曼贺你跨越解题，一鸣惊人
+                </li>
+                <li>
+                    阿兰·图灵带你领略编程之美，再攀高峰
+                </li>
+                <li>
+                    二叉树，红黑树，van Emde Boas树，最小生成树祝您新年好运枝繁叶茂。
+                </li>
+                <li>
+                    最大流，网络流，标准输入流，标准输出流，文件输入流，文件输出流祝您新年顺顺流流
+                </li>
+                <li>
+                    线性动规，区间动规，坐标动规，背包动规，树型动归为您的新年规划精彩。
+                </li>
+                <li>
+                    二分图、连通图、负权回路图，祝你在新年绘制梦想的蓝图；
+                </li>
+                <li>
+                    Prim算法、Kruskal算法，祝你在新年找到幸福的“最小生成树”。
+                </li>
+                <li>
+                    不必贪心做人，不必暴力搜索，经过一次次递归，你一定会发现，幸福就在你身边！
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--内容区域2-->
+    <div class="infolayout">
+        <div class="infocen">
+            <img src="./img/Ultraman.jpeg" width="320px" height="160px">
+            <div class="info">
+                <h2 class="ptit1">
+                    Ultraman也来咯！
+                </h2>
+                <p class="pinfo">
+                    2022，有过努力，有过奋斗，有过失误，有过伤心，有过平静，有过付出，有过收获，有过欢笑！
+                    2023，期待新的机遇，期待新的气象，期待新的改变，期待新的提高，期待新的进步，期待新的成功，期待新的喜悦，期待新的幸福！
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <h1>就到这了，拜拜！</h1>
+    </div>
+    <div class="author">
+        <p>Made By D3ic1de</p>
+    </div>
+    <div class="wave">
+        <svg class="editorial"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none">
+            <defs>
+                <path id="gentle-wave"
+                    d="M-160 44c30 0
+                        58-18 88-18s
+                        58 18 88 18
+                        58-18 88-18
+                        58 18 88 18
+                        v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="50" y="0" fill="rgba(255,0,0,0.7)" />
+                <use xlink:href="#gentle-wave" x="50" y="3" fill="rgba(255,0,0,0.5)" />
+                <use xlink:href="#gentle-wave" x="50" y="5" fill="rgba(255,0,0,0.3)" />
+                <use xlink:href="#gentle-wave" x="50" y="7" fill="rgba(255,0,0,1)" />
+            </g>
+        </svg>
+    </div>
+</body>
+</html>
